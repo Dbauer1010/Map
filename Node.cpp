@@ -19,3 +19,8 @@ void Node::setNextNode(Node* n)
 {
     this->nextNode = n;
 }
+
+Node* Node::goBack()
+{
+    return this->previousNode;
+}
