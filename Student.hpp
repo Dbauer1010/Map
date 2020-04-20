@@ -10,6 +10,7 @@ class Student
 
     private:
         string direction;
+        string roomName;
         
 
 };
