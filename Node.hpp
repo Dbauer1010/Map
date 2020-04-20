@@ -1,7 +1,7 @@
 #ifndef Node_hpp
 #define Node_hpp
 
-class Node 
+class Node  
 {
 private:
     int payload;
