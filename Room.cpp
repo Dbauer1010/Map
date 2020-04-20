@@ -1,6 +1,6 @@
 #include "Room.hpp"
 
-Room::Room()
+Room::Room() 
 {
     this->head = 0;
     this->count = 0;
