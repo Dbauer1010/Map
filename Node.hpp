@@ -5,13 +5,15 @@ class Node
 {
 private:
     int payload;
-    Node* nextNode; //Node nextNode - java treats this as a Node* automatically
+    Node* nextNode; 
+    Node* previousNode;
     
 public:
     Node(int payload);
     int getPayload();
     Node* getNextNode();
     void setNextNode(Node* n);
+    Node* goBack();
     
 };
 #endif
