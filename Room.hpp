@@ -5,7 +5,7 @@ class Room
 {
     public:
         Node(string payload);
-        string getPayload();
+        string getPayload(); 
         Node* getNextNode();
         void setNextNode(Node* n);
 
