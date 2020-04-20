@@ -1,12 +1,12 @@
-#include "LinkedList.hpp"
+#include "Room.hpp"
 
-LinkedList::LinkedList()
+Room::Room()
 {
     this->head = 0;
     this->count = 0;
 }
 
-void LinkedList::display()
+void Room::display()
 {
     for(int i = 0; i < this->count; i++)
     {
@@ -14,7 +14,7 @@ void LinkedList::display()
     }
 }
 
-string LinkedList::get(int index)
+string Room::get(int index)
 {
     Node* currNode = this->head;
     for(int i = 0; i < index; i++)
