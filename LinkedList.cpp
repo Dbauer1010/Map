@@ -1,34 +1,26 @@
 #include "LinkedList.hpp"
-#include <iostream>
 
 LinkedList::LinkedList()
 {
+    this->head = 0;
     this->count = 0;
 }
 
-void LinkedList::addFront(int payload)
-{
-    Node* n = new Node(payload);
-
-    if(!this->head)
-    {
-        this->head = n;
-    }
-    else
-    {
-        n->setNextNode(this->head);
-        this->head = n;
-    }
-    this->count++;
-}
-    
 void LinkedList::display()
 {
-    Node* currNode = this->head;
     for(int i = 0; i < this->count; i++)
     {
-        std::cout << currNode->getPayload() << "\n";
+        cout << this->get(i) << "\n";
+    }
+}
+
+string LinkedList::get(int index)
+{
+    Node* currNode = this->head;
+    for(int i = 0; i < index; i++)
+    {
         currNode = currNode->getNextNode();
     }
+    return currNode->getPayload();
 }
 
