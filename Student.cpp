@@ -1,18 +1,8 @@
-#include Student.hpp
+  
+#include "Student.hpp"
 
-void Student::Move(String direction)
+Student::Student(string name)
 {
-       if(direction == "north")
-       {
-              this->getNextNode();
-       }
-       else if(direction == "south")
-       {
-              this->goBack();
-       }
-}
-
-String Student::Room(String direction)
-{
-           return this->roomName;   
+    this->name = name;
+    this->currentRoom = 0;
 }
