@@ -1,16 +1,19 @@
-#include<iostream>
+#ifndef Student_hpp
+#define Student_hpp
+
+#include <string>
+
 using namespace std;
 
+class Room;
 class Student
 {
-    public:
-        void Move(string direction);
-        String Room(string direction);
-        
-
     private:
-        string direction;
-        string roomName;
-        
+        string name;
+        Room* currentRoom;
 
+    public:
+        Student(string name);
 };
+
+#endif
