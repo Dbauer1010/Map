@@ -72,8 +72,15 @@ Student* LinkedListOfStudents::removeAtIndex(int index)
         }
         else
         {
-            //remove from the middle
-            //write code here
+             StudentNode* currNode = this->head;
+            for(int i = 0; i < this->index-1; i++)
+            {
+                currNode = currNode->getNextNode();
+            }
+            studentToReturn = currNode->getNextNode()->getPayload();
+            StudentNode* nodeToDelete = currNode->getNextNode();
+            currNode->setNextNode(0);
+            delete nodeToDelete;
         }
         return studentToReturn;
     }
@@ -82,5 +89,6 @@ Student* LinkedListOfStudents::removeAtIndex(int index)
 
 int LinkedListOfStudents::indexOf(Student* s)
 {
-
+    int index = 0;
+    
 }
