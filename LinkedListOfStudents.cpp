@@ -89,6 +89,6 @@ Student* LinkedListOfStudents::removeAtIndex(int index)
 
 int LinkedListOfStudents::indexOf(Student* s)
 {
-    int index = 0;
+    return s->count;
     
 }
