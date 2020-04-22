@@ -1,4 +1,3 @@
-  
 #include "Student.hpp"
 
 Student::Student(string name)
