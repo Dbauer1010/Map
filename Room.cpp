@@ -79,7 +79,7 @@ void Room::display()
     }
     cout << "\n";
 }
-Void Room::addItem()
+Void Room::addItem(String name)
 {
-       
+       this->getItem(name);
 }
