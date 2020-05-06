@@ -20,3 +20,4 @@ StudentNode* StudentNode::getNextNode()
 {
     return this->nextNode;
 }
+ 
