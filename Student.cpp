@@ -50,7 +50,14 @@ Room* Student::getCurrentRoom()
     return this->currentRoom;
 }
 
-void Student::pickUpItem(Room* cRoom)
+void Student::pickUpItem(Room* cRoom, Item* item)
 {
-       if(cRoom
+       if(cRoom->getCount() = 0)
+       {
+               
+       }
+        else
+       {
+            Student->addItem(item);
+       }
 }
