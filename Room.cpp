@@ -79,3 +79,7 @@ void Room::display()
     }
     cout << "\n";
 }
+Void Room::addItem()
+{
+       
+}
