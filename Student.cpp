@@ -54,10 +54,14 @@ void Student::pickUpItem(Room* cRoom, Item* item)
 {
        if(cRoom->getCount() = 0)
        {
-               
+               cout << "Nothing in the Room to pick up";
        }
         else
        {
             Student->addItem(item);
        }
+}
+void Student::dropItem(Room* aRoom, Item* item
+{
+    
 }
