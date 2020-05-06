@@ -50,7 +50,7 @@ Room* Student::getCurrentRoom()
     return this->currentRoom;
 }
 
-Item* Student::pickUpItem()
+void Student::pickUpItem(Room* cRoom)
 {
-       
+       if(cRoom
 }
