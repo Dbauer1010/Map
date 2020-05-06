@@ -61,7 +61,10 @@ void Student::pickUpItem(Room* cRoom, Item* item)
             Student->addItem(item);
        }
 }
-void Student::dropItem(Room* aRoom, Item* item
+void Student::dropItem(Room* aRoom, Item* item)
 {
-    
+    for(int i = 0; i < currentItemCount; ++i)
+    {
+        aRoom.getItem(backpack[i]);   
+    }
 }
